@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background-image: url("/src/backgroundImg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2e28;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto; /* Center the login container horizontally */
+  margin-bottom: 20px; /* Add space below the login container */
+}
+
+.login-container label {
+  padding-bottom: 20px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(234, 160, 69, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #eaa045;
+  color: #1f2e28;
+  border: #eaa045;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+}
+
+.login-container button:hover {
+  background-color: #555;
+}
+
+.login-container a {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  background-color: #1f2e28;
+  color: #eaa045;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  color: #eaa045;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.footer .social-media img:hover {
+  transform: scale(1.1);
+}

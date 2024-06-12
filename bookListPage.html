@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Book List</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+
+    <meta
+      name="description"
+      content="Explore a list of books available at Fremantle City Library. Find titles, authors, and genres of various books."
+    />
+    <meta
+      name="keywords"
+      content="book list, Fremantle City Library, book titles, book authors, book genres, library catalog"
+    />
+
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/bookList.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="content-container">
+      <div class="table-container">
+        <h1>Book List</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="bookdetails1.html">To Kill a Mockingbird</a></td>
+              <td>Harper Lee</td>
+              <td>
+                Novel, Bildungsroman, Southern Gothic, Domestic Fiction,
+                Thriller
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails2.html"
+                  >Harry Potter and the Sorcerer’s Stone</a
+                >
+              </td>
+              <td>J.K. Rowling</td>
+              <td>
+                Fantasy, Fiction, Young Adult, Magic, Childrens, Middle Grade
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails3.html">Pride and Prejudice</a>
+              </td>
+              <td>Jane Austen</td>
+              <td>
+                Fantasy, Fiction, Young Adult, Magic, Childrens, Middle Grade
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails2.html">The Diary of a Young Girl</a>
+              </td>
+              <td>Anne Frank</td>
+              <td>Biography, Autobiography, Jewish literature</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">Animal Farm</a>
+              </td>
+              <td>George Orwell</td>
+              <td>
+                Allegory, Satire, Fable, Novella, Manga, Political satire,
+                Dystopian Fiction
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">The Great Gatsby</a>
+              </td>
+              <td>F. Scott Fitzgerald</td>
+              <td>Novel, Tragedy, Historical Fiction, Social Criticism</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">Moby Dick</a>
+              </td>
+              <td>Herman Melville</td>
+              <td>Adventure, Epic, Nautical Fiction, Classic, Literature</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">1984</a>
+              </td>
+              <td>George Orwell</td>
+              <td>
+                Dystopian Fiction, Science Fiction, Political Fiction, Social
+                Science Fiction, Classic
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">The Hobbit</a>
+              </td>
+              <td>J.R.R. Tolkien</td>
+              <td>
+                Fantasy, Adventure, Fiction, Epic Fantasy, High Fantasy,
+                Children's
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="bookdetails1.html">War and Peace</a>
+              </td>
+              <td>Leo Tolstoy</td>
+              <td>
+                Historical Fiction, War, Epic, Literature, Russian Literature,
+                Classic
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

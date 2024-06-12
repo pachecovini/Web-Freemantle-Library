@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+
+    <meta
+      name="description"
+      content="Get in touch with Fremantle City Library. Find our contact details, send us a message, or locate us on the map. We are here to assist you."
+    />
+    <meta
+      name="keywords"
+      content="Fremantle City Library, contact us, library contact, library address, send message, library location, get in touch, community library support"
+    />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/contactPage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <div class="content-container">
+      <div class="contact-container">
+        <h2>CONTACT US</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5527354858273!2d115.74549137497651!3d-32.054295727377614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a17ad0fc7941%3A0xc0214a95516d39e!2sFremantle%20Library!5e0!3m2!1sen!2sau!4v1716724169176!5m2!1sen!2sau"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          alert("Your message has been sent!");
+        });
+    </script>
+  </body>
+</html>

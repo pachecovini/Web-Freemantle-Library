@@ -1,0 +1,128 @@
+.content-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-detail-container {
+  background-color: #eaa045;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.book-cover {
+  margin-right: 20px;
+}
+
+.book-cover img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.book-details {
+  text-align: left;
+  width: 100%;
+}
+
+.book-details h2,
+.book-details p {
+  color: #1f2e28;
+  margin-bottom: 10px;
+}
+
+.reviews-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #eaa045;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-container h3 {
+  color: #1f2e28;
+  margin-bottom: 20px;
+}
+
+.review {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.review-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.review p {
+  color: #1f2e28;
+  margin: 0;
+}
+
+.new-review-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.new-review-form h3 {
+  text-align: center;
+}
+
+.new-review-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.new-review-form input[type="text"],
+.new-review-form textarea {
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(234, 160, 69, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+
+.new-review-form button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #eaa045;
+  color: #1f2e28;
+  border: #eaa045;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 680px) {
+  .content-container {
+    margin-left: 40px;
+    margin-top: 150px;
+    max-width: 350px;
+  }
+  .new-review-form {
+    max-width: 400px;
+  }
+}

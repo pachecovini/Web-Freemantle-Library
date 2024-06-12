@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Book Detail</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/bookDetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="content-container">
+      <div class="book-detail-container">
+        <div class="book-cover">
+          <img src="src/book3.jpg" alt="Book Cover" />
+        </div>
+        <div class="book-details">
+          <h2>Pride and Prejudice</h2>
+          <p><strong>Author:</strong> Jane Austen</p>
+          <p><strong>Publication Year:</strong> 28 January 1813</p>
+          <p><strong>Genre:</strong> Romance novel, Drama, Comics, Satire</p>
+          <p>
+            <strong>Synopsis:</strong>
+            "Pride and Prejudice," written by Jane Austen, is a classic novel
+            set in early 19th-century England. The story centers on Elizabeth
+            Bennet, one of five sisters, and her complex relationship with the
+            wealthy and aloof Mr. Darcy. Elizabeth navigates issues of manners,
+            upbringing, morality, and marriage in a society obsessed with status
+            and wealth. Despite initial misunderstandings and societal
+            pressures, Elizabeth and Mr. Darcy's relationship evolves from
+            mutual disdain to profound respect and love. The novel explores
+            themes of pride, prejudice, and the transformative power of love.
+          </p>
+        </div>
+      </div>
+      <div class="reviews-container">
+        <h3>Reviews</h3>
+        <div class="review">
+          <img src="src/reviewer1.png" alt="Reviewer 1" class="review-image" />
+          <p>
+            <strong>Reviewer 1: </strong> "I find 'Pride and Prejudice' to be a
+            timeless masterpiece. Austen's wit and insight into societal norms
+            of marriage and class are still relevant today. The 'civilized
+            sparring' between Elizabeth Bennet and Mr. Darcy is delightful, and
+            I am always struck by how Austen's sharp observations on human
+            nature resonate with modern readers."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer2.png" alt="Reviewer 2" class="review-image" />
+          <p>
+            <strong>Reviewer 2 :</strong> "As I read 'Pride and Prejudice,' I am
+            captivated by the development of Elizabeth and Darcy's characters.
+            Their journey from prejudice and misunderstanding to mutual respect
+            and love is profoundly moving. Austen's skill in depicting their
+            growth and self-awareness is remarkable, especially in how Elizabeth
+            recognizes her own misjudgments and how Darcy evolves into a more
+            considerate person."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer3.png" alt="Reviewer 3" class="review-image" />
+          <p>
+            <strong>Reviewer 3: </strong> "To me, 'Pride and Prejudice' is a
+            brilliant commentary on early 19th-century English society and a
+            captivating romance. Austen's sharp wit and insightful character
+            portrayals make this novel a classic. I love how her keen
+            observations and the engaging story continue to captivate and
+            delight readers across generations."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-review-form">
+      <h3>Add Your Review</h3>
+      <form id="review-form">
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" required />
+
+        <label for="review-content">Your Review:</label>
+        <textarea
+          id="review-content"
+          name="review-content"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("review-form")
+        .addEventListener("submit", function (event) {
+          alert("Your review has been sent!");
+        });
+    </script>
+  </body>
+</html>

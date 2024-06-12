@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Book Detail</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+    <meta
+      name="description"
+      content="Explore the details of 'To Kill a Mockingbird' by Harper Lee. Read the synopsis, author information, reviews, and submit your own review."
+    />
+    <meta
+      name="keywords"
+      content="To Kill a Mockingbird, Harper Lee, book details, book review, book synopsis, book author, Fremantle City Library, book information"
+    />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/bookDetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="content-container">
+      <div class="book-detail-container">
+        <div class="book-cover">
+          <img src="src/book1.jpg" alt="Book Cover" />
+        </div>
+        <div class="book-details">
+          <h2>To Kill a Mockingbird</h2>
+          <p><strong>Author:</strong> Harper Lee</p>
+          <p><strong>Publication Year:</strong> 11 July 1960</p>
+          <p>
+            <strong>Genre:</strong> Novel, Bildungsroman, Southern Gothic,
+            Domestic Fiction, Thriller, Legal Story
+          </p>
+          <p>
+            <strong>Synopsis:</strong>
+            "To Kill a Mockingbird" is set in the 1930s in a sleepy Southern
+            town. It follows Scout Finch, a young girl, as her father, lawyer
+            Atticus Finch, defends Tom Robinson, a black man falsely accused of
+            raping a white woman. Through Scout's eyes, the novel explores
+            themes of racial injustice, moral growth, and the loss of innocence.
+          </p>
+        </div>
+      </div>
+      <div class="reviews-container">
+        <h3>Reviews</h3>
+        <div class="review">
+          <img src="src/reviewer1.png" alt="Reviewer 1" class="review-image" />
+          <p>
+            <strong>Reviewer 1: </strong> "To Kill a Mockingbird is a timeless
+            masterpiece that deeply resonated with me. Harper Lee's poignant
+            narrative about racial injustice in the American South touched my
+            heart and opened my eyes to the complexities of society. Through
+            Scout's innocent perspective, I was transported to a pivotal moment
+            in history, where moral integrity clashed with prejudice. It's a
+            book that stays with you long after you turn the last page, leaving
+            you pondering its profound themes of empathy, courage, and the
+            search for truth."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer2.png" alt="Reviewer 2" class="review-image" />
+          <p>
+            <strong>Reviewer 2: </strong> "Reading To Kill a Mockingbird was a
+            transformative experience for me. Harper Lee's brilliant
+            storytelling captivated me from the first chapter to the last. The
+            characters felt so real, each grappling with their own struggles and
+            triumphs in a society plagued by bigotry and discrimination. Atticus
+            Finch's unwavering commitment to justice inspired me, while Scout's
+            coming-of-age journey filled me with empathy and understanding. This
+            novel is not just a literary classic; it's a powerful reminder of
+            the importance of compassion and standing up for what is right."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer3.png" alt="Reviewer 3" class="review-image" />
+          <p>
+            <strong>Reviewer 3: </strong>"To Kill a Mockingbird is a book that
+            left an indelible mark on my soul. Harper Lee's evocative prose
+            transported me to the small town of Maycomb, Alabama, where I
+            witnessed the harsh realities of racial prejudice through the
+            innocent eyes of Scout Finch. The injustice faced by Tom Robinson
+            and the moral integrity embodied by characters like Atticus Finch
+            challenged me to confront my own beliefs and biases. This novel is a
+            profound exploration of humanity's capacity for both cruelty and
+            compassion, and it serves as a timeless reminder of the enduring
+            power of empathy and understanding."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-review-form">
+      <h3>Add Your Review</h3>
+      <form id="review-form">
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" required />
+
+        <label for="review-content">Your Review:</label>
+        <textarea
+          id="review-content"
+          name="review-content"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("review-form")
+        .addEventListener("submit", function (event) {
+          alert("Your review has been sent!");
+        });
+    </script>
+  </body>
+</html>

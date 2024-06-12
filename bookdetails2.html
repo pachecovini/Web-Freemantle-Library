@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Book Detail</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/bookDetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="content-container">
+      <div class="book-detail-container">
+        <div class="book-cover">
+          <img src="src/book2.jpg" alt="Book Cover" />
+        </div>
+        <div class="book-details">
+          <h2>Harry Potter and the Sorcerer’s Stone</h2>
+          <p><strong>Author:</strong> J.K. Rowling , Olly Moss (Illustrator)</p>
+          <p>
+            <strong>Publication Year:</strong> First published June 26, 1997
+          </p>
+          <p>
+            <strong>Genre:</strong> Fantasy, Fiction, Young Adult, Magic,
+            Childrens, Middle Grade
+          </p>
+          <p>
+            <strong>Synopsis:</strong>
+            "Harry Potter and the Sorcerer’s Stone" follows Harry, an orphaned
+            boy who discovers he is a wizard on his 11th birthday. He attends
+            Hogwarts School of Witchcraft and Wizardry, where he makes friends,
+            learns magic, and uncovers secrets about his parents' deaths. Harry
+            discovers the existence of the Sorcerer’s Stone and confronts the
+            dark wizard Voldemort, who seeks to return to power.
+          </p>
+        </div>
+      </div>
+      <div class="reviews-container">
+        <h3>Reviews</h3>
+        <div class="review">
+          <img src="src/reviewer1.png" alt="Reviewer 1" class="review-image" />
+          <p>
+            <strong>Reviewer 1: </strong> "Harry Potter and the Sorcerer's Stone
+            ignited my imagination like no other book ever has. J.K. Rowling's
+            enchanting tale of a young boy discovering his magical heritage
+            swept me away into a world of wonder and adventure. From the moment
+            Harry receives his letter from Hogwarts to his thrilling encounters
+            with trolls and dark wizards, I was completely spellbound. The
+            characters felt like old friends, and Hogwarts itself became a place
+            I longed to visit. This book is a timeless classic that reminds us
+            of the power of friendship, bravery, and the magic that exists
+            within us all."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer2.png" alt="Reviewer 2" class="review-image" />
+          <p>
+            <strong>Reviewer 2: </strong> "Reading Harry Potter and the
+            Sorcerer's Stone was like discovering a hidden treasure trove of
+            magic and mystery. J.K. Rowling's storytelling prowess shines
+            brightly in this captivating tale of a boy who learns he is a
+            wizard. From the bustling streets of Diagon Alley to the enchanted
+            halls of Hogwarts, every page brims with imagination and excitement.
+            Harry, Ron, and Hermione quickly became my heroes as they embarked
+            on their quest to unravel the mysteries surrounding the
+            Philosopher's Stone. This book is a delightful blend of humor,
+            heart, and adventure that will enchant readers of all ages."
+          </p>
+        </div>
+        <div class="review">
+          <img src="src/reviewer3.png" alt="Reviewer 3" class="review-image" />
+          <p>
+            <strong>Reviewer 3: </strong>"Harry Potter and the Sorcerer's Stone
+            is a book that holds a special place in my heart. J.K. Rowling's
+            imaginative world-building and richly drawn characters drew me in
+            from the very first page. As Harry navigates the challenges of his
+            new life at Hogwarts School of Witchcraft and Wizardry, I found
+            myself cheering him on every step of the way. From the quirky antics
+            of the Weasley twins to the sinister plots of Voldemort, there's
+            never a dull moment in this spellbinding story. This book is a
+            magical journey that reminds us of the power of love, friendship,
+            and the courage to stand up against darkness."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-review-form">
+      <h3>Add Your Review</h3>
+      <form id="review-form">
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" required />
+
+        <label for="review-content">Your Review:</label>
+        <textarea
+          id="review-content"
+          name="review-content"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("review-form")
+        .addEventListener("submit", function (event) {
+          alert("Your review has been sent!");
+        });
+    </script>
+  </body>
+</html>

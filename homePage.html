@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - Home</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+    <meta
+      name="description"
+      content="Welcome to Fremantle City Library. Discover your next favorite book, explore reviews, and share your thoughts."
+    />
+    <meta
+      name="keywords"
+      content="Fremantle City Library, books, book reviews, library, reading, literature, book list, featured books, Harper Lee, J.K. Rowling, Jane Austen, Anne Frank, George Orwell"
+    />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="container">
+      <h1>Welcome to Fremantle City Library</h1>
+      <p>
+        Discover your next favorite book. Explore reviews and share your
+        thoughts.
+      </p>
+
+      <h2>Featured Books</h2>
+      <div class="featured-books">
+        <a href="bookdetails1.html" class="book-card">
+          <img src="src/book1.jpg" alt="Book 1 Cover" />
+          <h3>To Kill a Mockingbird</h3>
+          <p>Author: Harper Lee</p>
+          <p>
+            "To Kill a Mockingbird," a novel about a childhood in a sleepy
+            Southern town and a crisis of conscience, became a bestseller and
+            critical success upon its 1960...
+            <br />
+            Read more
+          </p>
+        </a>
+
+        <a href="bookdetails2.html" class="book-card">
+          <img src="src/book2.jpg" alt="Book 2 Cover" />
+          <h3>Harry Potter and the Sorcerer’s Stone</h3>
+          <p>Author: J.K. Rowling</p>
+          <p>
+            "Turning the envelope over, his hand trembling, Harry saw a purple
+            wax seal bearing a coat of arms; a lion, an eagle, a badger and a
+            snake surrounding a large letter 'H'."...
+            <br />
+            Read more
+          </p>
+        </a>
+
+        <a href="bookdetails3.html" class="book-card">
+          <img src="src/book3.jpg" alt="Book 3 Cover" />
+          <h3>Pride and Prejudice</h3>
+          <p>Author: Jane Austen</p>
+          <p>
+            Since its 1813 success, "Pride and Prejudice" has remained a beloved
+            novel. Jane Austen called it "her own darling child," with Elizabeth
+            Bennet as "delightful a creatu...
+            <br />
+            Read more
+          </p>
+        </a>
+
+        <a href="bookdetails1.html" class="book-card">
+          <img src="src/book4.jpg" alt="Book 4 Cover" />
+          <h3>The Diary of a Young Girl</h3>
+          <p>Author: Anne Frank</p>
+          <p>
+            Anne Frank’s diary, found in the attic where she spent her last
+            years, is a powerful reminder of war's horrors. In 1942, Anne's
+            family hid from the Nazis in Amsterdam for two years...
+            <br />
+            Read more
+          </p>
+        </a>
+
+        <a href="bookdetails2.html" class="book-card">
+          <img src="src/book5.jpg" alt="Book 5 Cover" />
+          <h3>Animal Farm</h3>
+          <p>Author: George Orwell</p>
+          <p>
+            A farm is taken over by mistreated animals who, with idealism and
+            stirring slogans, aim to create a paradise of progress and equality.
+            This sets the stage for a sharp satirical fable that chronicles the
+            shift from revolution to tyranny...
+            <br />
+            Read more
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

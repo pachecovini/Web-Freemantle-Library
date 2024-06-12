@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremantle City Library - About Us</title>
+    <link rel="icon" type="image/x-icon" href="src/x-icon.png" />
+    <meta
+      name="description"
+      content="Learn about Fremantle City Library, our mission, vision, and team. Discover the benefits of reading and how we serve our community."
+    />
+    <meta
+      name="keywords"
+      content="Fremantle City Library, about us, library mission, library vision, library team, benefits of reading, community library, literacy, lifelong learning"
+    />
+
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="homePage.html">
+          <img src="src/logo.png" alt="Fremantle City Library Logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <a href="homePage.html">Home</a>
+        <a href="bookListPage.html">Book List</a>
+        <a href="aboutUsPage.html">About</a>
+        <a href="contactPage.html">Contact</a>
+        <a href="loginPage.html">Login</a>
+      </div>
+      <div class="search-bar">
+        <form action="bookdetails1.html" method="get">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            name="q"
+            required
+          />
+          <input type="image" src="src/search.png" alt="Search" />
+        </form>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="src/menu.png" alt="Menu" />
+      </button>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+
+    <img
+      src="src/HomePagelibrary.png"
+      alt="Library Banner"
+      class="banner-image"
+    />
+
+    <div class="content-container">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+          Welcome to the Fremantle City Library, a cornerstone of our community
+          for over three years. Our library has grown significantly to meet the
+          increasing demands of our patrons, expanding our collection to include
+          a diverse range of books across various genres.
+        </p>
+        <p>
+          Our mission is to provide a welcoming and inclusive space for all
+          community members, promoting literacy and lifelong learning. We
+          believe in the power of books to inspire, educate, and transform
+          lives.
+        </p>
+        <h3>Our Team</h3>
+        <div class="team-container">
+          <div class="team-member">
+            <img src="src/owner1.jpg" alt="John Doe" />
+            <h4>John Doe</h4>
+            <p>Library Director</p>
+          </div>
+          <div class="team-member">
+            <img src="src/owner2.jpg" alt="Jane Smith" />
+            <h4>Jane Smith</h4>
+            <p>Head Librarian</p>
+          </div>
+        </div>
+        <h3>Our Vision</h3>
+        <p>
+          We envision a community where every individual has access to the
+          resources and opportunities they need to learn and grow. Through our
+          collection, programs, and services, we aim to foster a love of reading
+          and a passion for knowledge in all our visitors.
+        </p>
+      </div>
+
+      <div class="benefits-container">
+        <h2>The Benefits of Reading</h2>
+        <p>
+          Reading has numerous benefits, including improving mental stimulation,
+          reducing stress, enhancing knowledge, and expanding vocabulary. It
+          also improves focus and concentration, and provides entertainment and
+          tranquility.
+        </p>
+
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/xqMozc4K4pg?si=YOXzAfVFhO9EpzY0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Fremantle City Library</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="src/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="src/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="src/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
